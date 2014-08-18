@@ -5,7 +5,11 @@ class CreateBooks < ActiveRecord::Migration
       t.string :isbn
       t.text :description
 
+      t.references  :user
+      t.references  :author
+
       t.timestamps
     end
+
   end
 end

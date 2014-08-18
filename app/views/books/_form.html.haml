@@ -6,5 +6,8 @@
     = f.input :isbn
     = f.input :description
 
+    =f.label 'Author'
+    = f.collection_select :author_id, Author.all, :id, :name, :prompt => "Select Author"
+
   .form-actions
     = f.button :submit
