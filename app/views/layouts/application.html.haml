@@ -13,3 +13,8 @@
     %main{:role => "main"}
       = render 'layouts/messages'
       = yield
+
+    %footer
+      - if Rails.env.development?
+        #footer-info
+          = render 'layouts/layout_info'

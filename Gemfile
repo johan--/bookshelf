@@ -41,10 +41,19 @@ end
 
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'pry-rails'
-  gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'thin'
+
+  gem 'byebug'
+
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
+
+  gem 'rails-footnotes', '>= 4.0.0', '<5'
+
 end
 
 group :production do
